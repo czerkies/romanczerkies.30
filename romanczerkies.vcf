@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.15//EN
+N:Czerkies;Roman;;;
+FN:Roman Czerkies
+EMAIL;type=INTERNET;type=WORK;type=pref:contact@romanczerkies.fr
+item1.URL;type=pref:romanczerki.es
+item1.X-ABLabel:_$!<HomePage>!$_
+END:VCARD

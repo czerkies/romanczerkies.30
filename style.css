@@ -1,0 +1,190 @@
+:root {
+    --color-primary-100: hsl(0, 0%, 99%);
+    --color-primary-300: hsl(0, 0%, 94%);
+    --color-primary-500: hsl(0, 0%, 50%);
+    --color-primary-700: hsl(0, 0%, 32%);
+    --color-primary-900: hsl(0, 0%, 18%);
+
+    --color-secondary-100: hsl(200, 70%, 18%);
+    --color-secondary-300: hsl(200, 75%, 33%);
+    --color-secondary-500: hsl(200, 70%, 48%);
+    --color-secondary-700: hsl(200, 75%, 63%);
+    --color-secondary-900: hsl(200, 70%, 78%);
+
+    --color-container: var(--color-primary-300);
+    --color-content: var(--color-primary-100);
+
+    --gutter-100: .25rem;
+    --gutter-300: .5rem;
+    --gutter-500: 1rem;
+    --gutter-700: 2rem;
+    --gutter-900: 8rem;
+
+    --font-size-100: .75rem;
+    --font-size-300: .875rem;
+    --font-size-500: 1rem;
+    --font-size-700: 1.5rem;
+    --font-size-900: 2rem;
+
+    --line-height-title: 1.1;
+    --line-height-text: 1.45;
+    --letter-spacing-lower: .025em;
+    --letter-spacing-upper: .05em;
+    --border-radius: 1px;
+
+    --cubic-bezier-title: cubic-bezier(.64, .32, .36, .98);
+    --cubic-bezier: cubic-bezier(.42, 0, .58, 1);
+    --transition: 200ms var(--cubic-bezier);
+    --duration-h1: 1500ms}
+
+@media (prefers-reduced-motion) {
+    * {
+        animation: none !important;
+        transition: none !important}
+}
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased}
+    *::selection {
+        background: var(--color-primary-900);
+        color: var(--color-primary-100)}
+h1, h2, h3, h4, h5, p {
+    margin: 0}
+ul {
+    margin: 0;
+    padding: 0}
+a {
+    text-decoration: none;
+    letter-spacing: var(--letter-spacing-lower);
+    color: var(--color-secondary-500);
+    transition: color var(--transition)}
+    a:hover, a:focus {
+        color: var(--color-secondary-700)}
+    a:active {
+        color: var(--color-secondary-900)}
+        
+html {
+    font: normal 100%/var(--line-height-text) -apple-system, Arial, sans-serif}
+body {
+    inline-size: 64ch;
+    max-inline-size: 100%;
+    margin: 0 auto; /**/
+    /*padding: calc(env(safe-area-inset-top) + var(--gutter-700)) calc(env(safe-area-inset-right) + var(--gutter-500)) calc(env(safe-area-inset-bottom) + var(--gutter-900)) calc(env(safe-area-inset-left) + var(--gutter-500));*/
+    padding-block-start: calc(env(safe-area-inset-top) + var(--gutter-700));
+    padding-block-end: calc(env(safe-area-inset-bottom) + var(--gutter-900));
+    padding-inline-start: calc(env(safe-area-inset-right) + var(--gutter-500));
+    padding-inline-end: calc(env(safe-area-inset-left) + var(--gutter-500));
+    background: var(--color-primary-100)}
+
+.list {
+    list-style: none}
+.list__item:not(:first-child) {
+    margin: var(--gutter-300) 0 0 0 /**/}
+.list__content {
+    font-size: var(--font-size-500)}
+
+/* HEADER */
+.header {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    line-height: var(--line-height-title);
+    letter-spacing: var(--letter-spacing-lower)}
+    .header__title {
+        font-size: var(--font-size-900);
+        font-weight: 700;
+        color: var(--color-primary-900);
+        will-change: filter, opacity, transform}
+        @keyframes ttl-appear {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, 2em, 0)}
+            50% {
+                opacity: 1}
+            100% {
+                transform: translate3d(0, 0, 0)}
+        }
+        .header__title--hll {
+            position: absolute;
+            /*top: var(--line-height-title);*/
+            inset-block-start: var(--line-height-title);
+            opacity: 0;
+            animation: hll-appear var(--duration-h1) var(--cubic-bezier-title) 1150ms backwards}
+            @keyframes hll-appear {
+                0% {
+                    opacity: 1;
+                    transform: translate3d(0, 0, 0) /*scale(1)*/}
+                25% {
+                    opacity: 1}
+                50% {
+                    opacity: 0}
+                100% {
+                    transform: translate3d(0, -1.5em, 0) /*scale(.98)*/}
+            }
+        .header__title--nm {
+            animation: ttl-appear var(--duration-h1) var(--cubic-bezier-title) 950ms backwards}
+    .header__subtitle {
+        margin: var(--gutter-100) 0 0 /**/;
+        font-size: var(--font-size-700);
+        font-weight: 400;
+        color: var(--color-primary-700)}
+        .header__wrd {
+            display: inline-block;
+            will-change: filter, opacity, transform;
+            animation: appear 1250ms var(--cubic-bezier) backwards calc(var(--duration-wrd) * var(--duration-h1))}
+            .header__wrd--dv {
+                --duration-wrd: 1.5}
+            .header__wrd--wb {
+                --duration-wrd: 1.7}
+            .header__wrd--fll {
+                --duration-wrd: 1.9}
+            .header__wrd--stck {
+                --duration-wrd: 2.1}
+            .header__wrd--u {
+                --duration-wrd: 2.5}
+            .header__wrd--dsgn {
+                --duration-wrd: 2.7}
+            @keyframes appear {
+                0% {
+                    opacity: 0;
+                    transform: scale(.99)}
+                90% {
+                    transform: scale(1)}
+                100% {
+                    opacity: 1}
+            }
+
+/* SECTION */
+.section {
+    margin: var(--gutter-900) 0 0 0 /**/}
+    .section__title {
+        font-size: var(--font-size-100);
+        font-weight: 600;
+        letter-spacing: var(--letter-spacing-upper);
+        text-transform: uppercase;
+        color: var(--color-primary-500)}
+    .section__content {
+        margin: var(--gutter-500) 0 0 0;
+        color: var(--color-primary-900)}
+
+/* EXPERIENCE */
+.experience:not(:last-child) {
+    margin: 0 0 var(--gutter-700) /**/}
+    .experience__title {
+        color: var(--color-primary-900);
+        font-weight: 600;
+        font-size: var(--font-size-500)}
+    .experience__subtitle {
+        color: var(--color-primary-500);
+        font-weight: 400;
+        font-size: var(--font-size-100);
+        letter-spacing: var(--letter-spacing-lower)}
+    .experience__content {
+        list-style: none;
+        color: var(--color-primary-700);
+        margin: var(--gutter-300) 0 0 /**/;
+        font-size: var(--font-size-300)}
