@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /error.php
+
+Sitemap: https://romanczerki.es/sitemap.php
