@@ -1,0 +1,66 @@
+.header {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    line-height: var(--line-height-title);
+    letter-spacing: var(--letter-spacing-lower)}
+    .header__title {
+        font-size: var(--fnt-sz-9);
+        font-weight: 700;
+        color: var(--clr-prmr-9);
+        will-change: filter, opacity, transform}
+        @keyframes ttl-appear {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, 2em, 0)}
+            50% {
+                opacity: 1}
+            100% {
+                transform: translate3d(0, 0, 0)}}
+        .header__title--hll {
+            position: absolute;
+            inset-block-start: var(--line-height-title);
+            opacity: 0;
+            animation: hll-appear var(--duration-h1) var(--cubic-bezier-title) 1000ms backwards}
+            @keyframes hll-appear {
+                0% {
+                    opacity: 1;
+                    transform: translate3d(0, 0, 0)}
+                25% {
+                    opacity: 1}
+                50% {
+                    opacity: 0}
+                100% {
+                    transform: translate3d(0, -1.5em, 0)}}
+        .header__title--nm {
+            animation: ttl-appear var(--duration-h1) var(--cubic-bezier-title) 800ms backwards}
+    .header__subtitle {
+        margin-block-start: var(--gttr-1);
+        font-size: var(--fnt-sz-7);
+        font-weight: 400;
+        color: var(--clr-prmr-7)}
+        .header__wrd {
+            display: inline-block;
+            will-change: filter, opacity, transform;
+            animation: appear 1250ms var(--cubic-bezier) backwards calc(var(--duration-wrd) * var(--duration-h1))}
+            .header__wrd--dv {
+                --duration-wrd: 1.5}
+            .header__wrd--wb {
+                --duration-wrd: 1.7}
+            .header__wrd--fll {
+                --duration-wrd: 1.9}
+            .header__wrd--stck {
+                --duration-wrd: 2.1}
+            .header__wrd--u {
+                --duration-wrd: 2.5}
+            .header__wrd--dsgn {
+                --duration-wrd: 2.7}
+            @keyframes appear {
+                0% {
+                    opacity: 0;
+                    transform: scale(.99)}
+                90% {
+                    transform: scale(1)}
+                100% {
+                    opacity: 1}}

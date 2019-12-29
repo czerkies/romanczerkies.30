@@ -1,0 +1,50 @@
+:root {
+    --clr-prmr-1: hsl(0, 0%, 98%);
+    --clr-prmr-3: hsl(0, 0%, 60%);
+    --clr-prmr-5: hsl(0, 0%, 50%);
+    --clr-prmr-7: hsl(0, 0%, 32%);
+    --clr-prmr-9: hsl(0, 0%, 18%);
+
+    --clr-scndr-1: hsl(200, 70%, 18%);
+    --clr-scndr-3: hsl(200, 75%, 33%);
+    --clr-scndr-5: hsl(200, 70%, 48%);
+    --clr-scndr-7: hsl(200, 75%, 63%);
+    --clr-scndr-9: hsl(200, 70%, 78%);
+
+    --gttr-1: .25rem;
+    --gttr-3: .5rem;
+    --gttr-5: 1rem;
+    --gttr-7: 2rem;
+    --gttr-9: 8rem;
+
+    --fnt-sz-1: .75rem;
+    --fnt-sz-3: .875rem;
+    --fnt-sz-5: 1rem;
+    --fnt-sz-7: 1.5rem;
+    --fnt-sz-9: 2rem;
+
+    --line-height-title: 1.1;
+    --line-height-text: 1.45;
+    --letter-spacing-lower: .025em;
+    --letter-spacing-upper: .05em;
+
+    --cubic-bezier-title: cubic-bezier(.64, .32, .36, .98);
+    --cubic-bezier: cubic-bezier(.42, 0, .58, 1);
+    --transition: 200ms var(--cubic-bezier);
+    --duration-h1: 1500ms}
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --clr-prmr-1: hsl(0, 0%, 0%);
+            --clr-prmr-3: hsl(0, 0%, 10%);
+            --clr-prmr-5: hsl(0, 0%, 50%);
+            --clr-prmr-7: hsl(0, 0%, 75%);
+            --clr-prmr-9: hsl(0, 0%, 90%);
+        
+            --clr-scndr-1: hsl(200, 90%, 30%);
+            --clr-scndr-3: hsl(200, 95%, 45%);
+            --clr-scndr-5: hsl(200, 100%, 60%);
+            --clr-scndr-7: hsl(200, 95%, 75%);
+            --clr-scndr-9: hsl(200, 90%, 90%);
+        }
+    }

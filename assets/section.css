@@ -1,0 +1,11 @@
+.section {
+    margin-block-start: var(--gttr-9)}
+    .section__title {
+        font-size: var(--fnt-sz-1);
+        font-weight: 600;
+        letter-spacing: var(--letter-spacing-upper);
+        text-transform: uppercase;
+        color: var(--clr-prmr-5)}
+    .section__content {
+        margin-block-start: var(--gttr-5);
+        color: var(--clr-prmr-9)}

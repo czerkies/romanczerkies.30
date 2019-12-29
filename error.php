@@ -1,6 +1,6 @@
-<?php include ('header.php'); ?>
+<?php include 'assets/header.php'; ?>
     <section class="section">
         <h3 class="section__title">Page introuvable</h3>
         <p class="section__content"><a href="/" title="Retourner à l'accueil">Retourner à l'accueil</p>
     </section>
-<?php include ('footer.php'); ?>
+<?php include 'assets/footer.php'; ?>
