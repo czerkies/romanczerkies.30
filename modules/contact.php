@@ -3,7 +3,7 @@
     <ul class="section__content list">
         <li class="list__item">
             <a 
-                href="/assets/romanczerkies.vcf"
+                href="roman_czerkies.vcf"
                 title="Télécharger la Carte de Visite" 
                 class="list__content"
             >Carte de Visite</a>
