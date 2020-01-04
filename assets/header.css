@@ -14,7 +14,7 @@
             0% {
                 opacity: 0;
                 transform: translate3d(0, 2em, 0)}
-            50% {
+            75% {
                 opacity: 1}
             100% {
                 transform: translate3d(0, 0, 0)}}
@@ -34,7 +34,7 @@
                 100% {
                     transform: translate3d(0, -1.5em, 0)}}
         .header__title--nm {
-            animation: ttl-appear var(--duration-h1) var(--cubic-bezier-title) 910ms backwards}
+            animation: ttl-appear var(--duration-h1) var(--cubic-bezier-title) 800ms backwards}
     .header__subtitle {
         margin-block-start: var(--gttr-1);
         font-size: var(--fnt-sz-7);
@@ -43,25 +43,25 @@
         .header__wrd {
             display: inline-block;
             will-change: filter, opacity, transform;
-            animation: appear 1400ms var(--cubic-bezier) backwards calc(var(--duration-wrd) * var(--duration-h1))}
+            animation: appear 1250ms var(--cubic-bezier) backwards calc(var(--duration-wrd) * var(--duration-h1))}
             .header__wrd--dv {
                 --duration-wrd: 1.4}
             .header__wrd--wb {
-                --duration-wrd: 1.55}
+                --duration-wrd: 1.6}
             .header__wrd--fll {
-                --duration-wrd: 1.7}
+                --duration-wrd: 1.8}
             .header__wrd--stck {
-                --duration-wrd: 1.85}
+                --duration-wrd: 2}
             .header__wrd--u {
                 --duration-wrd: 2.4}
             .header__wrd--i {
-                --duration-wrd: 2.5}
+                --duration-wrd: 2.6}
             .header__wrd--dsgn {
-                --duration-wrd: 2.7}
+                --duration-wrd: 2.8}
             @keyframes appear {
                 0% {
                     opacity: 0;
-                    transform: scale(.988)}
+                    transform: scale(.9875)}
                 95% {
                     transform: scale(1)}
                 100% {

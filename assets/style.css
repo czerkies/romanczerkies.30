@@ -26,7 +26,8 @@ a {
         color: var(--clr-scndr-9)}
         
 html {
-    font: normal 100%/var(--line-height-text) -apple-system, Arial, sans-serif}
+    font: normal 100%/var(--line-height-text) -apple-system, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%}
 body {
     inline-size: 64ch;
     max-inline-size: 100%;

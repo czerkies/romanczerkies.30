@@ -43,7 +43,8 @@
                 'enterprise' => "Productions ROLIEN",
                 'content' => [
                     "Création et développement de <a href='http://rolien.fr'>rolien.fr</a>.",
-                    "Interface tendant au minimalisme.",
+                    "Spécialisation CSS3 & HTML5.",
+                    "Simplification de l'interface."
                 ]
             ]
         ] as $exp) { ?>

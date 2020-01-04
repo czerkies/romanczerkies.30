@@ -31,7 +31,7 @@
     --cubic-bezier-title: cubic-bezier(.64, .32, .36, .98);
     --cubic-bezier: cubic-bezier(.42, 0, .58, 1);
     --transition: 200ms var(--cubic-bezier);
-    --duration-h1: 1750ms}
+    --duration-h1: 1500ms}
 
     @media (prefers-color-scheme: dark) {
         :root {
