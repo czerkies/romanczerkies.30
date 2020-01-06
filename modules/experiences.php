@@ -9,7 +9,7 @@
                 'enterprise' => "Primeum",
                 'content' => [
                     "Développement d'applications web avec l'ensemble des équipes.",
-                    "Spécialisation EcmaScript & CSS.",
+                    "Spécialisation EcmaScript, React & CSS.",
                     "Re-design d'interface.",
                     "Création des maquettes d'interfaces utilisateurs.",
                 ]
