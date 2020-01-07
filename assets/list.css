@@ -1,6 +1,6 @@
 .list {
     list-style: none}
-.list__item:not(:first-child) {
-    margin-block-start: var(--gttr-3)}
-.list__content {
-    font-size: var(--fnt-sz-5)}
+    .list__item:not(:first-child) {
+        margin-block-start: var(--gttr-3)}
+    .list__content {
+        font-size: var(--fnt-sz-5)}

@@ -3,9 +3,9 @@
     .section__title {
         font-size: var(--fnt-sz-1);
         font-weight: 600;
+        color: var(--clr-prmr-5);
         letter-spacing: var(--letter-spacing-upper);
-        text-transform: uppercase;
-        color: var(--clr-prmr-5)}
+        text-transform: uppercase}
     .section__content {
         margin-block-start: var(--gttr-5);
         color: var(--clr-prmr-9)}

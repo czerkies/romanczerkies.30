@@ -1,13 +1,13 @@
 .experience:not(:last-child) {
     margin-block-end: var(--gttr-7)}
     .experience__title {
-        color: var(--clr-prmr-9);
+        font-size: var(--fnt-sz-5);
         font-weight: 600;
-        font-size: var(--fnt-sz-5)}
+        color: var(--clr-prmr-9)}
     .experience__subtitle {
-        color: var(--clr-prmr-5);
-        font-weight: 400;
         font-size: var(--fnt-sz-1);
+        font-weight: 400;
+        color: var(--clr-prmr-5);
         letter-spacing: var(--letter-spacing-lower)}
     .experience__content {
         margin-block-start: var(--gttr-3);
