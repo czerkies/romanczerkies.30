@@ -3,28 +3,28 @@
     <ul class="section__content list"><?php foreach([
             [
                 'value' => 'Twitter',
-                'link' => 'https://twitter.com/roman_czerkies',
-                'title' => 'twitter'
+                'link' => '//twitter.com/roman_czerkies',
+                'title' => 'Roman Czerkies (@roman_czerkies) / Twitter'
             ],
             [
                 'value' => 'LinkedIn',
-                'link' => 'https://linkedin.com/in/romanczerkies',
-                'title' => 'LinkedIn'
+                'link' => '//linkedin.com/in/romanczerkies',
+                'title' => 'Roman Czerkies | LinkedIn'
             ],
             [
                 'value' => 'GitHub',
-                'link' => 'https://github.com/czerkies',
-                'title' => 'GitHub'
+                'link' => '//github.com/czerkies',
+                'title' => 'czerkies (Roman Czerkies) · GitHub'
             ],
             [
                 'value' => 'Strava',
-                'link' => 'https://strava.com/athletes/roman_czerkies',
-                'title' => 'Strava'
+                'link' => '//strava.com/athletes/roman_czerkies',
+                'title' => 'Profil de cycliste Strava | Roman Czerkies'
             ]
         ] as $link) { ?><li class="list__item">
             <a 
                 href="<?= $link['link'] ?>" 
-                title="<?= $link['value'] ?>"
+                title="<?= $link['title'] ?>"
                 class="list__content"
             ><?= $link['value'] ?></a>
         </li><?php } ?>

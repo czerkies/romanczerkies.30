@@ -14,3 +14,6 @@
         list-style: none;
         color: var(--clr-prmr-7);
         font-size: var(--fnt-sz-3)}
+    .experience__item {
+        margin-block-start: var(--gttr-1);
+    }

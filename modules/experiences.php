@@ -11,7 +11,7 @@
                     "Développement d'applications web avec l'ensemble des équipes.",
                     "Spécialisation EcmaScript, React & CSS.",
                     "Re-design d'interface.",
-                    "Création des maquettes d'interfaces utilisateurs.",
+                    "Création des maquettes d'interfaces utilisateur.",
                 ]
             ],
             [
@@ -42,9 +42,9 @@
                 'date_end' => "2013",
                 'enterprise' => "Productions ROLIEN",
                 'content' => [
-                    "Création et développement de <a href='http://rolien.fr'>rolien.fr</a>.",
+                    "Création et développement de <a href='//rolien.fr' title='Productions ROLIEN'>rolien.fr</a>.",
                     "Spécialisation CSS3 & HTML5.",
-                    "Simplification de l'interface."
+                    "Ajout de fonctionnalités, en apportant de l'ordre à la complexité."
                 ]
             ]
         ] as $exp) { ?>

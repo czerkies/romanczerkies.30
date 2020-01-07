@@ -3,10 +3,10 @@
     <ul class="section__content list">
         <li class="list__item">
             <a 
-                href="roman_czerkies.vcf"
-                title="Télécharger la Carte de Visite" 
+                href="mailto:bonjour@romanczerkies.fr?subject=Bonjour"
+                title="Envoyer un courriel à bonjour@romanczerkies.fr" 
                 class="list__content"
-            >Carte de Visite</a>
+            >bonjour@romanczerkies.fr</a>
         </li>
     </ul>
 </section>

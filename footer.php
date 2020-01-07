@@ -1,4 +1,4 @@
         </main>
-        <!-- romanczerkies.fr Version beta-11.0 - <?= date('Y') ?> -->
+        <!-- romanczerkies.fr Version 30.0.0 - <?= date('Y') ?> -->
     </body>
 </html>
