@@ -1,5 +1,5 @@
 :root {
-    --clr-prmr-1: hsl(0, 0%, 98%);
+    --clr-prmr-1: hsl(0, 0%, 99%);
     --clr-prmr-3: hsl(0, 0%, 60%);
     --clr-prmr-5: hsl(0, 0%, 50%);
     --clr-prmr-7: hsl(0, 0%, 32%);
@@ -30,8 +30,7 @@
 
     --cubic-bezier-title: cubic-bezier(.64, .32, .36, .98);
     --cubic-bezier: cubic-bezier(.42, 0, .58, 1);
-    --transition: 200ms var(--cubic-bezier);
-    --duration-h1: 1750ms}
+    --transition: 200ms var(--cubic-bezier)}
 
     @media (prefers-color-scheme: dark) {
         :root {
